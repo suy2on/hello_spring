@@ -16,7 +16,7 @@ class MemberServiceTest {
     MemoryMemberRepository memberRepository;
 
     @BeforeEach
-    public void beforeEach() {
+    public void beforeEach() { // 테스트 돌릴 때 레포지토리를 넣음 : DI
         memberRepository = new MemoryMemberRepository();
         memberService = new MemberService(memberRepository);
     }
