@@ -2,14 +2,18 @@ package hello.hellospring.service; // 좀더 비즈니스적인 코드
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
-import hello.hellospring.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
 
-public class MemberService { 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+public class MemberService { // command + shift + T : test 자동생성
+    private final MemberRepository memberRepository;
 
+    public MemberService(MemberRepository memberRepository){
+        this.memberRepository = memberRepository;
+    }
+
+    //회원가입
     public Long join(Member member){
 
         // 동명이인 불가 ( command + option + v : 값을 받을 변수 생성 )
