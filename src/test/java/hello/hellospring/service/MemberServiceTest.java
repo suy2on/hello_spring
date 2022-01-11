@@ -53,6 +53,7 @@ class MemberServiceTest {
         memberService.join(member1);
         IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
 
+        //then
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 이름입니다");
 
 //        try {
@@ -63,11 +64,4 @@ class MemberServiceTest {
 //        }
     }
 
-    @Test
-    void 회원전체조회() {
-    }
-
-    @Test
-    void 특정회원조회() {
-    }
 }

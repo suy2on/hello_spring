@@ -4,6 +4,7 @@ import hello.hellospring.domain.Member;
 
 import java.util.*;
 
+// option + enter -> implement method, import
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();

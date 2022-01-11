@@ -1,5 +1,6 @@
 package hello.hellospring.domain;
 
+// ctrl + enter
 public class Member {
 
     private Long id; //pk값
