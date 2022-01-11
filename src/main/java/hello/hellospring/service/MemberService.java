@@ -2,17 +2,14 @@ package hello.hellospring.service; // 좀더 비즈니스적인 코드
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service // spring이 service로 등록 (스프링빈 등록)
 public class MemberService { // command + shift + T : test 자동생성
     private final MemberRepository memberRepository;
 
-    @Autowired
+
     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
