@@ -2,10 +2,12 @@ package hello.hellospring.service; // 좀더 비즈니스적인 코드
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional // 데이터 저장 및 변경시 필요 
 public class MemberService { // command + shift + T : test 자동생성
     private final MemberRepository memberRepository;
 
