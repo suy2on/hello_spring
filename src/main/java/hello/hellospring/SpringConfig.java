@@ -44,7 +44,7 @@ public class SpringConfig {
 //      //  return new MemoryMemberRepository();  memory
 //      //  return new JdbcMemberRepository(dataSource); 순수 jdb
 //        //  return new JdbcTemplateMemberRepository(dataSource); // jdbc 템플릿
-//       // return new JpaMemberRepository(em);
+//           return new JpaMemberRepository(em);
 //    }
 
 }
