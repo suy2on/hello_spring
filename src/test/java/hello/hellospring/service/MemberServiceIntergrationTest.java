@@ -50,12 +50,7 @@ class MemberServiceIntergrationTest {
         //then
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 이름입니다");
 
-//        try {
-//            memberService.join(member2);
-//            fail();
-//        } catch(IllegalStateException e){
-//            Assertions.assertThat(e.getMessage()).isEqualTo("이미 존재하는 이름입니다.")
-//        }
+
     }
 
 }

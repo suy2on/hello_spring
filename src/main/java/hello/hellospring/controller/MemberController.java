@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@Controller // spring container가 관리 (스프링빈등록)
+@Controller
 public class MemberController {
 
     private final MemberService memberService;
@@ -20,6 +20,7 @@ public class MemberController {
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
+
 
     @GetMapping("/members/new")
     public String createForm(){
